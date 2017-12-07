@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+ <h1>{{title}}</h1>
+  <h2>My favorite hero is: {{myHero.name}}</h2>
+  <p>Heroes:</p>
+  <ul>
+    <li *ngFor = "let hero of heroes">
+      {{ hero.name }}
+    </li>
+  </ul>
+<app-my-new-component></app-my-new-component>
+
+<h1>Parent and child Heroes component</h1>
+<app-hero-parent></app-hero-parent>
+
+<h1> Highlight </h1>
+<app-highlight></app-highlight>
+
+<h1> Highlight button </h1>
+<app-highlight-button></app-highlight-button>
+
+<!-- Structural directives-->
+<app-structural-component></app-structural-component>
